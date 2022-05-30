@@ -11,9 +11,7 @@
 }
 .ARM_content_homme{
     position: relative;
-    /*background: url(../img/shape-bottom-2.png) center bottom no-repeat !important;*/
-    /*background: url(../img/home-shape.png) left center no-repeat !important;*/
-    background: url(../img/home-1.jpg) !important;
+    background: url(../img/home.jpg) !important;
     background-color: #cdcfdc !important;
     background-position: center !important;
     background-size: contain !important;
