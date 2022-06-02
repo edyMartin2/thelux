@@ -1,10 +1,9 @@
 /********** Template CSS **********/
-:root {
-    --primary: #00B98E;
+:root { 
+    --primary: #087706;
     --light: #F3F6F8;
     --dark: #0E2E50;
 }
-
 
 /*** Spinner ***/
 #spinner {
@@ -157,7 +156,7 @@
         border-bottom: 1px solid rgba(256, 256, 256, .2);
         z-index: 999;
     }
-
+    
     .sticky-top.navbar {
         position: fixed;
         background: #FFFFFF;
@@ -434,8 +433,4 @@
     margin-right: 0;
     padding-right: 0;
     border-right: none;
-}
-
-.form_inputs {
-    color: #000;
 }

@@ -1,0 +1,39 @@
+/* sass --watch bootstrap.scss:/css/style.min.css --style compressed */
+.bg-primary{
+    background-color: #087706 !important;
+}
+.btn-primary{
+    background-color: #087706 !important;
+    border-color: #087706 !important;
+}
+.text-primary{
+    color: #087706 !important;
+}
+.ARM_content_homme{
+    position: relative;
+    background: url(../img/home.jpg) !important;
+    background-color: #cdcfdc !important;
+    background-position: center !important;
+    background-size: contain !important;
+    background-repeat: no-repeat !important;
+}
+.ARM_content_homme .ARM_container{
+    margin-bottom: 100px;
+}
+.ARM_content_homme .ARM_content_img{
+    margin-top: 0;
+}
+.ARM_content_homme .ARM_img_home{
+    width: 500px;
+    border-radius: 50%;
+    /*border: 2px solid #e09d5b;*/
+}
+.ARM_content_homme .ARM_content_text{
+    height: 500px;
+    padding-left: 150px;
+}
+.ARM_content_homme .ARM_svg_home{
+    position: absolute;
+    bottom: -1px;
+    transform: scaleX(-1);
+}
