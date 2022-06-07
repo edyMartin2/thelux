@@ -57,8 +57,10 @@ try {
 
     $mail->setFrom('from@gfg.com', 'Name');           // Set sender of the mail
 
-    $mail->addAddress('edgar.edgarroman@gmail.com');           // Add a recipient
+    $mail->addAddress('hosting2.0@outlook.com', 'angel');           // Add a recipient
     $mail->addAddress('edgar.edgarroman@gmail.com', 'Edy');   // Name is optional
+    $mail->addAddress('esteban.g.rguez@gmail.com','Esteban');
+    $mail->addAddress('isaimimbrera@gmail.com', 'isai');
     $mail->isHTML(true);
     $mail->Subject = $Subject;
     $mail->Body    =  "Nuevo mensage de {$Nombre} <br> con correo {$Correo} : {$Mensaje}";
