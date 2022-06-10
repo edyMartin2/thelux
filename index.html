@@ -35,6 +35,9 @@
     <!-- Template Stylesheet -->
     <link href="css/custom.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
+
+    <!-- Swall alert -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.4.17/sweetalert2.all.js" integrity="sha512-L0pIRrYrKsfCidtpWhWSrrbyAcSfrvMaezfwnNGns7c7MuToIEZRabX+WmZ6+Dzn8ESNsHz7t/k6vF8aM1fVXg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
 
 <body>
@@ -156,7 +159,7 @@
                         <small class="text-white">Diam elitr est dolore at sanctus nonumy.</small>
                         <div class="position-relative w-100 mt-3">
                             <input class="form-control border-0 rounded-pill w-100 ps-4 pe-5" type="text"
-                                placeholder="Enter Your Email" style="height: 48px;">
+                                placeholder="Enter Your Email" style="height: 48px;" onblur="alert('Hoa')">
                             <button type="button" class="btn shadow-none position-absolute top-0 end-0 mt-1 me-2"><i
                                     class="fa fa-paper-plane text-primary fs-4"></i></button>
                         </div>
@@ -551,7 +554,7 @@
                                 <div class="col-md-6">
                                     <div class="form-floating">
                                         <input type="email" class="form-control" name="Mail" id="Correo"
-                                            placeholder="Correo">
+                                            placeholder="Correo" onblur="validateCorreo(event)">
                                         <label for="email">Correo</label>
                                     </div>
                                 </div>
@@ -570,8 +573,7 @@
                                     </div>
                                 </div>
                                 <div class="col-12">
-                                    <button class="btn btn-primary w-100 py-3" type="submit">Send
-                                        Message</button>
+                                    <button class="btn btn-primary w-100 py-3" type="submit">Contactame</button>
                                 </div>
                             </div>
                         </form>
@@ -648,6 +650,7 @@
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
     <script src="js/mail/form.js"></script>
+    <script src="js/validadores/index.js"></script>
 </body>
 
 </html>

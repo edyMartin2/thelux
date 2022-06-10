@@ -1,3 +1,31 @@
+function paste() {
+    $('#Alert').addClass('icon fa-envelope').html(' Enviando mensaje...');
+    $.ajax({
+        type: 'POST',
+        url: './Mailer/send/index.php',
+        data: datos,
+        dataType: 'jsonp',
+        jsonp: 'callback',
+        success: function (jsonp) {
+            if (jsonp == 1) {
+                $('form').css({ 'align-items': 'center', 'display': 'flex', 'justify-content': 'center' });
+                $('form').html('<center class="icon fa-envelope" style="margin-bottom:50px;"><br>Se ha enviado.<br><br>¡Gracias por tu mensaje!</center>');
+            } else {
+                $('#Alert').removeClass();
+                $('#Alert').css({ 'color': 'white' }).html('Se encontro un problema al procesar la información.');
+                $('input[type="submit"]').attr("disabled", false);
+            }
+        },
+        error: function (xhr, status, error) {
+            console.log(this);
+            console.log(error);
+            $('#Alert').removeClass();
+            $('#Alert').css({ 'color': 'white' }).html('Ocurrio un problema al procesar la información.');
+            $('input[type="submit"]').attr("disabled", false);
+        }
+    });
+}
+
 $(document).ready(function () {
 
     $('form').submit(function (event) {
@@ -72,6 +100,7 @@ $(document).ready(function () {
                         $('#Alert').css({ 'color': 'white' }).html('Se encontro un problema al procesar la información.');
                         $('input[type="submit"]').attr("disabled", false);
                     }
+
                 },
                 error: function (xhr, status, error) {
                     console.log(this);
@@ -81,6 +110,15 @@ $(document).ready(function () {
                     $('input[type="submit"]').attr("disabled", false);
                 }
             });
+            Swal.fire({
+                title: 'Listo',
+                text: 'Te contactamos pronto',
+                confirmButtonText: 'Cerrar',
+            })
+
+            setTimeout(function(){
+                window.location.reload()
+            })
         }
     });
 
