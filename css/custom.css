@@ -12,6 +12,11 @@
 .ARM_header_nav{
     background-color: #ffffff;
 }
+@media all and (max-width: 767px) {
+    .ARM_header_nav{
+        position: sticky !important;
+    }
+}
 .ARM_header_nav h1, .ARM_header_nav a {
     color: #087706 !important;
 }
@@ -23,14 +28,31 @@
     background-size: contain !important;
     background-repeat: no-repeat !important;
 }
+@media all and (max-width: 767px) {
+    .ARM_content_homme{
+        padding-top: 15px !important;
+        height: 500px;
+        background: url(../img/home-mobile.jpg) !important;
+        background-color: #cdcfdc !important;
+        background-position: center !important;
+        background-size: cover !important;
+        background-repeat: no-repeat !important;
+    }
+}
 .ARM_content_homme .ARM_container{
     margin-bottom: 100px;
+}
+.ARM_content_homme .ARM_container .ARM_container_content {
+    margin: 0;
 }
 .ARM_content_homme .ARM_text_brand{
     margin-bottom: 0px !important;
 }
 .ARM_content_homme .ARM_text_slogan{
-    font-size: 1.5rem;
+    font-size: 1.6rem;
+}
+.ARM_content_homme .ARM_text_description{
+    font-size: 1.3rem;
 }
 .ARM_content_homme .ARM_content_img{
     margin-top: 0;
@@ -44,9 +66,29 @@
     height: 500px;
     padding-left: 150px;
 }
+@media all and (max-width: 767px) {
+    .ARM_content_homme .ARM_content_text{
+        padding: 0;
+        margin: 0;
+    }
+    .ARM_content_homme .ARM_content_text .ARM_text_slogan{
+        font-size: 1.2rem;
+    }
+    .ARM_content_homme .ARM_content_text .ARM_text_description{
+        position: absolute;
+        bottom: 67px;
+        left: 0;
+        background: rgb(204 206 218 / 55%);
+        padding: 10px;
+        margin: 0;
+        color: #0e2e50;
+        box-shadow: 0 0 45px rgb(0 0 0 / 7%);
+        font-size: 1.1rem;
+    }
+}
 .ARM_content_homme .ARM_svg_home{
     position: absolute;
-    bottom: -1px;
+    bottom: -2px;
     transform: scaleX(-1);
 }
 .ARM_content_info1 .ARM_image img{
