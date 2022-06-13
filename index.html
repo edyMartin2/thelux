@@ -35,9 +35,6 @@
     <!-- Template Stylesheet -->
     <link href="css/custom.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
-
-    <!-- Swall alert -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.4.17/sweetalert2.all.js" integrity="sha512-L0pIRrYrKsfCidtpWhWSrrbyAcSfrvMaezfwnNGns7c7MuToIEZRabX+WmZ6+Dzn8ESNsHz7t/k6vF8aM1fVXg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
 
 <body>
@@ -54,8 +51,8 @@
 
         <!-- Navbar & Hero Start -->
         <div class="container-xxl position-relative p-0">
-            <nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0">
-                <a href="index.html" class="navbar-brand p-0">
+            <nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0 ARM_header_nav">
+                <a href="index.html" class="navbar-brand p-0 ARM_header_title">
                     <h1 class="m-0">The Luxe</h1>
                     <!-- <img src="img/logo.png" alt="Logo"> -->
                 </a>
@@ -87,10 +84,10 @@
                 <div class="container ARM_container">
                     <div class="row g-5 align-items-center">
                         <div class="col-lg-6 text-center text-lg-start ARM_content_text">
-                            <h1 class="text-blue mb-4 animated zoomIn">The lux app</h1>
-                            <p class="text-blue pb-3 animated zoomIn">Somos la opción fiel de desarrollo.</p>
+                            <h1 class="text-blue mb-4 animated zoomIn ARM_text_brand">DELUXE APP DEVELOPMEMT</h1>
+                            <p class="text-blue pb-3 animated zoomIn ARM_text_slogan">Somos la opción fiel de desarrollo.</p>
                             <p class="text-blue  pb-3 animated zoomIn">
-                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                                Somos una empresa de tecnología de vanguardia, enfocada al desarrollo de software, buscando brindar una solución a sus necesidades.
                             </p>
                             <!--a href="" class="btn btn-outline-light rounded-pill border-2 py-3 px-5 animated slideInRight">Learn More</a-->
                         </div>
@@ -108,27 +105,33 @@
 
 
         <!-- About Start -->
-        <div class="container-xxl py-6">
+        <div class="container-xxl py-6 ARM_content_info1"> 
             <div class="container">
                 <div class="row g-5 align-items-center">
-                    <div class="col-lg-6 wow zoomIn" data-wow-delay="0.1s">
+                    <div class="col-lg-6 wow zoomIn ARM_image" data-wow-delay="0.1s">
                         <img class="img-fluid" src="img/dog-work.jpg">
                     </div>
                     <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
                         <div class="d-inline-block border rounded-pill text-primary px-4 mb-3">About Us</div>
-                        <h2 class="mb-4">Award Wining Consultancy Agency For Your Business</h2>
-                        <p class="mb-4">Tempor erat elitr rebum at clita. Diam dolor diam ipsum et tempor sit. Aliqu
-                            diam amet diam et eos labore. Clita erat ipsum et lorem et sit, sed stet no labore lorem
-                            sit. Sanctus clita duo justo et tempor eirmod</p>
+                            <h2 class="mb-4">ENFOCA TU VISIÓN</h2>
+                        <p class="mb-4">La idea es toda tuya, nosotros nos encargamos de ayudarte a realizarla.</p>
                         <div class="row g-3 mb-4">
                             <div class="col-12 d-flex">
                                 <div class="flex-shrink-0 btn-lg-square rounded-circle bg-primary">
                                     <i class="fa fa-user-tie text-white"></i>
                                 </div>
                                 <div class="ms-4">
-                                    <h6>Business Planning</h6>
-                                    <span>Tempor erat elitr rebum at clita. Diam dolor ipsum amet eos erat ipsum lorem
-                                        et sit sed stet lorem sit clita duo</span>
+                                    <h6>Desarrollo Web y Apps</h6>
+                                    <span>Desarrollo de Software a Medida, usando las tecnologías más novedosas en el mercado.</span>
+                                </div>
+                            </div>
+                            <div class="col-12 d-flex">
+                                <div class="flex-shrink-0 btn-lg-square rounded-circle bg-primary">
+                                    <i class="fa fa-link text-white"></i>
+                                </div>
+                                <div class="ms-4">
+                                    <h6>Soporte Web</h6>
+                                    <span>Analizaremos cualquier problema que tengas con tus servicios actuales en búsqueda de una solución.</span>
                                 </div>
                             </div>
                             <div class="col-12 d-flex">
@@ -136,13 +139,12 @@
                                     <i class="fa fa-chart-line text-white"></i>
                                 </div>
                                 <div class="ms-4">
-                                    <h6>Financial Analaysis</h6>
-                                    <span>Tempor erat elitr rebum at clita. Diam dolor ipsum amet eos erat ipsum lorem
-                                        et sit sed stet lorem sit clita duo</span>
+                                    <h6>Administración de Proyectos</h6>
+                                    <span>Ponemos a tu disposición a nuestro equipo de Project Managers para llevar la gestión de tu departamento de TI.</span>
                                 </div>
                             </div>
                         </div>
-                        <a class="btn btn-primary rounded-pill py-3 px-5 mt-2" href="">Read More</a>
+                        <a class="btn btn-primary rounded-pill py-3 px-5 mt-2" href="" style="display: none;">Read More</a>
                     </div>
                 </div>
             </div>
@@ -159,7 +161,7 @@
                         <small class="text-white">Diam elitr est dolore at sanctus nonumy.</small>
                         <div class="position-relative w-100 mt-3">
                             <input class="form-control border-0 rounded-pill w-100 ps-4 pe-5" type="text"
-                                placeholder="Enter Your Email" style="height: 48px;" onblur="alert('Hoa')">
+                                placeholder="Enter Your Email" style="height: 48px;">
                             <button type="button" class="btn shadow-none position-absolute top-0 end-0 mt-1 me-2"><i
                                     class="fa fa-paper-plane text-primary fs-4"></i></button>
                         </div>
@@ -193,8 +195,7 @@
                             </div>
                             <div class="p-5">
                                 <h5 class="mb-3">Desarrollo a la medida</h5>
-                                <span>Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam
-                                    sed stet lorem.</span>
+                                <span>Desarrollo de Software a Medida, usando las tecnologías más novedosas en el mercado.</span>
                             </div>
                         </div>
                     </div>
@@ -210,8 +211,7 @@
                             </div>
                             <div class="p-5">
                                 <h5 class="mb-3">Soporte técnico</h5>
-                                <span>Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam
-                                    sed stet lorem.</span>
+                                <span>Analizaremos cualquier problema que tengas con tus servicios actuales en búsqueda de una solución.</span>
                             </div>
                         </div>
                     </div>
@@ -226,9 +226,8 @@
                                 </a>
                             </div>
                             <div class="p-5">
-                                <h5 class="mb-3">Desarrollo de apps</h5>
-                                <span>Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam
-                                    sed stet lorem.</span>
+                                <h5 class="mb-3">Desarrollo Móvil</h5>
+                                <span>Aplicaciones Móviles, desarrollo híbrido en React para aplicaciones Android e iOS.</span>
                             </div>
                         </div>
                     </div>
@@ -244,8 +243,7 @@
                             </div>
                             <div class="p-5">
                                 <h5 class="mb-3">Administración de proyectos</h5>
-                                <span>Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam
-                                    sed stet lorem.</span>
+                                <span>Ponemos a tu disposición a nuestro equipo de Project Managers para llevar la gestión de tu departamento de TI.</span>
                             </div>
                         </div>
                     </div>
@@ -261,8 +259,7 @@
                             </div>
                             <div class="p-5">
                                 <h5 class="mb-3">Tienda en línea</h5>
-                                <span>Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam
-                                    sed stet lorem.</span>
+                                <span>Te ayudamos a formar tu propia tienda en línea para expandir tu negocio.</span>
                             </div>
                         </div>
                     </div>
@@ -277,9 +274,8 @@
                                 </a>
                             </div>
                             <div class="p-5">
-                                <h5 class="mb-3">Sitios web</h5>
-                                <span>Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam
-                                    sed stet lorem.</span>
+                                <h5 class="mb-3">Servicios en la Nube</h5>
+                                <span>Buscamos brindar mayor potencial a tus proyectos, con los servicios que brindan AWS y GCloud.</span>
                             </div>
                         </div>
                     </div>
@@ -368,7 +364,7 @@
 
 
         <!-- Client Start -->
-        <div class="container-xxl bg-primary my-6 py-5 wow fadeInUp" data-wow-delay="0.1s">
+        <div class="container-xxl bg-primary my-6 py-5 wow fadeInUp ARM_container_logos" data-wow-delay="0.1s">
             <div class="container">
                 <div class="owl-carousel client-carousel">
                     <a href="#"><img class="img-fluid" src="img/logo--wordpress.png" alt=""></a>
@@ -522,15 +518,21 @@
 
 
         <!-- Footer Start -->
-        <div class="container-fluid bg-dark text-light footer pt-5 wow fadeIn" data-wow-delay="0.1s"
+        <div class="container-fluid bg-dark text-light footer pt-5 wow fadeIn ARM_content_footer" data-wow-delay="0.1s"
             style="margin-top: 6rem;">
             <div class="container py-5">
                 <div class="row g-5">
-                    <div class="col-md-6 col-lg-3">
-                        <h5 class="text-white mb-4">Get In Touch</h5>
-                        <p><i class="fa fa-map-marker-alt me-3"></i>123 Street, New York, USA</p>
-                        <p><i class="fa fa-phone-alt me-3"></i>+012 345 67890</p>
-                        <p><i class="fa fa-envelope me-3"></i>info@example.com</p>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="col-lg-12 mb-3 ARM_image">
+                            <div class="col-lg-9 wow zoomIn " data-wow-delay="0.1s">
+                                <img class="img-fluid" src="img/llamanos.jpg">
+                            </div>
+                        </div>
+                        
+                        <h5 class="text-white mb-3">Contacto</h5>
+                        <p class="mb-2"><i class="fa fa-map-marker-alt me-1"></i>Ciudad de México</p>
+                        <p class="mb-2"><i class="fa fa-phone-alt me-1"></i>+012 345 67890</p>
+                        <p class="mb-2"><i class="fa fa-envelope me-1"></i>contacto@thelux.app</p>
                         <div class="d-flex pt-2">
                             <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
                             <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
@@ -540,7 +542,8 @@
                         </div>
                     </div>
 
-                    <div class="col-md-12 col-lg-6">
+                    <div class="col-md-12 col-lg-8 ARM_content_form">
+                        <h5 class="text-white mb-4">¡Escribenos!</h5>
                         <!-- Contact Start -->
                         <form>
                             <div class="row g-3 form_inputs" >
@@ -554,7 +557,7 @@
                                 <div class="col-md-6">
                                     <div class="form-floating">
                                         <input type="email" class="form-control" name="Mail" id="Correo"
-                                            placeholder="Correo" onblur="validateCorreo(event)">
+                                            placeholder="Correo">
                                         <label for="email">Correo</label>
                                     </div>
                                 </div>
@@ -573,7 +576,7 @@
                                     </div>
                                 </div>
                                 <div class="col-12">
-                                    <button class="btn btn-primary w-100 py-3" type="submit">Contactame</button>
+                                    <button class="btn btn-primary w-100 py-3" type="submit">Enviar mensaje</button>
                                 </div>
                             </div>
                         </form>
@@ -596,7 +599,7 @@
                         <a class="btn btn-link" href="">Terms & Condition</a>
                         <a class="btn btn-link" href="">Career</a>
                     </div> -->
-                    <div class="col-md-6 col-lg-3">
+                    <div class="col-md-6 col-lg-3" style="display: none;">
                         <h5 class="text-white mb-4">Newsletter</h5>
                         <p>Lorem ipsum dolor sit amet elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit
                             non vulpu</p>
@@ -613,19 +616,12 @@
                 <div class="copyright">
                     <div class="row">
                         <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                            &copy; <a class="border-bottom" href="#">Your Site Name</a>, All Right Reserved.
-
-                            <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
-                            Designed By <a class="border-bottom" href="https://htmlcodex.com">HTML Codex</a>
-                            <br>Distributed By: <a class="border-bottom" href="https://themewagon.com"
-                                target="_blank">ThemeWagon</a>
+                            &copy; <a class="border-bottom">The luxe app</a>, Todos los derechos reservados.
                         </div>
                         <div class="col-md-6 text-center text-md-end">
                             <div class="footer-menu">
-                                <a href="">Home</a>
-                                <a href="">Cookies</a>
-                                <a href="">Help</a>
-                                <a href="">FQAs</a>
+                                <a href="">Términos y condiciones</a>
+                                <a href="">Aviso de privacidad</a>
                             </div>
                         </div>
                     </div>
@@ -650,7 +646,4 @@
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
     <script src="js/mail/form.js"></script>
-    <script src="js/validadores/index.js"></script>
 </body>
-
-</html>
