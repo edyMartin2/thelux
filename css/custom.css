@@ -9,6 +9,12 @@
 .text-primary{
     color: #087706 !important;
 }
+.ARM_header_nav{
+    background-color: #ffffff;
+}
+.ARM_header_nav h1, .ARM_header_nav a {
+    color: #087706 !important;
+}
 .ARM_content_homme{
     position: relative;
     background: url(../img/home.jpg) !important;
@@ -19,6 +25,12 @@
 }
 .ARM_content_homme .ARM_container{
     margin-bottom: 100px;
+}
+.ARM_content_homme .ARM_text_brand{
+    margin-bottom: 0px !important;
+}
+.ARM_content_homme .ARM_text_slogan{
+    font-size: 1.5rem;
 }
 .ARM_content_homme .ARM_content_img{
     margin-top: 0;
@@ -37,3 +49,22 @@
     bottom: -1px;
     transform: scaleX(-1);
 }
+.ARM_content_info1 .ARM_image img{
+    border-radius: 5px;
+}
+.ARM_container_logos{
+    box-shadow: 0 0 45px rgb(0 0 0 / 7%);
+    background-color: initial !important;
+}
+.ARM_content_footer .ARM_image{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.ARM_content_footer .ARM_image img{
+    border-radius: 5px;
+    margin: 0 auto;
+}
+.ARM_content_footer .ARM_content_form label{
+    color: #0E2E50;
+} 
